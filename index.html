@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClasicTours</title>
+    <!-- Responsive Website -->
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- Link for font awesome icon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+</head>
+  <body>
+
+<!-- Header -->
+<!-- Navbar -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="images/logo_2.png" alt="ClasicTours" class="logo"> </a>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>  
+            <ul class="nav-list">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="tours.html">Tour Packages<i class="fas fa-caret-down"></i></a>
+                <ul class="submenu">
+                  <a href="tours.html">Inbound Tour</a>
+                  <a href="tours.html">Outbound Tour</a>
+                </ul>
+              </li>
+              <li>
+                <a href="hiking.html">Special Packages<i class="fas fa-caret-down"></i></a>
+                <ul class="submenu">
+                  <a href="hiking.html">Hiking Tour</a>
+                  <a href="hiking.html">Pilgrimage Tour</a>
+                </ul>
+              </li>
+              <li>
+                <a href="visa.html">Visa<i class="fas fa-caret-down"></i></a>
+                <ul class="submenu">
+                  <a href=visa.html>Overseas Citizenship of India (OCI)</a>
+                  <a href="visa.html">Country</a>
+                </ul>
+              </li>
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+      </nav>
+    </div>
+  </header>
+<!-- End of Navbar -->
+<!-- End of Header -->
+
+<!-- Slideshow container -->
+<div class="container">
+  <div class="Slider">
+
+    <div class="slideitem fade" style="display:block;">
+      <img src="images/Slider/Thai_2.jpg" alt="Tour" class="heroimage">
+        <div class="hero">
+          <h4 class="intro">Welcome to</h4>
+            <h3 class="company">Clasic Travel and Tours</h3>
+              <div class="headline-description">
+                <div class="separator">
+                  <div class="line line-left"></div>
+                    <div><i class="fas fa-plane fa-3x"></i></div>
+                  <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5 class="quote">Book your next adventure with us</h5>
+                    <a href="#" class="btn-1">More Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideitem fade" style="display:block;">
+      <img src="images/Slider/Greece_1.jpg" alt="Tour" class="heroimage">
+        <div class="hero">
+          <h4 class="intro">Welcome to</h4>
+            <h3 class="company">Clasic Travel and Tours</h3>
+              <div class="headline-description">
+                <div class="separator">
+                  <div class="line line-left"></div>
+                    <div><i class="fas fa-plane fa-3x"></i></div>
+                  <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5 class="quote">Book your next adventure with us</h5>
+                    <a href="#" class="btn-1">More Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideitem fade" style="display:block;">
+      <img src="images/Slider/Japan_1.jpg" alt="Tour" class="heroimage">
+        <div class="hero">
+          <h4 class="intro">Welcome to</h4>
+            <h3 class="company">Clasic Travel and Tours</h3>
+              <div class="headline-description">
+                <div class="separator">
+                  <div class="line line-left"></div>
+                    <div><i class="fas fa-plane fa-3x"></i></div>
+                  <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5 class="quote">Book your next adventure with us</h5>
+                    <a href="#" class="btn-1">More Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideitem fade" style="display:block;">
+      <img src="images/Slider/New York_1.jpg" alt="Tour" class="heroimage">
+        <div class="hero">
+          <h4 class="intro">Welcome to</h4>
+            <h3 class="company">Clasic Travel and Tours</h3>
+              <div class="headline-description">
+                <div class="separator">
+                  <div class="line line-left"></div>
+                    <div><i class="fas fa-plane fa-3x"></i></div>
+                  <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5 class="quote">Book your next adventure with us</h5>
+                    <a href="#" class="btn-1">More Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="dotsbox" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+</div>
+<!-- Slideshow container Ends -->
+
+<!--  Tour Card section  -->
+<section class="tour" id="tour">
+  <div class="container">
+
+    <div class="tour-head">
+      <p class="heading">Where To Go</p>
+      <p class="subheading">International Destinations</p>
+    </div>
+
+      <div class="tour-container" class="card-slider">
+
+        <div class="tour-card" class="slide-right">  
+          <img src="images/Cards/IndianTemple_1.jpg" alt="" class="tour-img">
+            <div class="tour-details">
+              <div class="tour-contained">
+                <h3 class="tour-name"><i class="fas fa-map-marker-alt  fa-1x"></i>India</h3>
+                  <ul class="icons">
+                    <li><i class="fas fa-users fa-2x"></i></li>
+                    <li><i class="fas fa-camera fa-2x"></i></li>
+                    <li><i class="fas fa-bus fa-2x"></i></li>
+                    <li><i class="fas fa-utensils fa-2x"></i></li>
+                  </ul>
+              </div>
+                  <p class ="tour-type"><i class="far fa-calendar-alt"></i>Customizable</p>
+                  <p class ="tour-day"><i class="far fa-clock"></i>8-9 Days</p> 
+                  <p class ="international-price">From RM 1000<span>All Inclusive</span></p>
+                  <a href="tours.html" class="btn-card">Find Out More</a>               
+            </div>
+        </div>
+
+          <div class="tour-card" class="slide-right">  
+            <img src="images/Cards/Dubai_1.jpg" alt="" class="tour-img">
+              <div class="tour-details">
+                <div class="tour-contained">
+                  <h3 class="tour-name"><i class="fas fa-map-marker-alt  fa-1x"></i>Dubai</h3>
+                    <ul class="icons">
+                      <li><i class="fas fa-users fa-2x"></i></li>
+                      <li><i class="fas fa-camera fa-2x"></i></li>
+                      <li><i class="fas fa-bus fa-2x"></i></li>
+                      <li><i class="fas fa-utensils fa-2x"></i></li>
+                    </ul>
+                </div>
+                    <p class ="tour-type"><i class="far fa-calendar-alt"></i>Customizable</p>
+                    <p class ="tour-day"><i class="far fa-clock"></i>8-9 Days</p> 
+                    <p class ="international-price">From RM 2000<span>All Inclusive</span></p>
+                    <a href="tours.html" class="btn-card">Find Out More</a>               
+              </div>
+          </div>
+    
+            <div class="tour-card" class="slide-right">  
+              <img src="images/Cards/Maldives_1.jpg" alt="" class="tour-img">
+                <div class="tour-details">
+                  <div class="tour-contained">
+                    <h3 class="tour-name"><i class="fas fa-map-marker-alt  fa-1x"></i>Maldives</h3>
+                      <ul class="icons">
+                        <li><i class="fas fa-users fa-2x"></i></li>
+                        <li><i class="fas fa-camera fa-2x"></i></li>
+                        <li><i class="fas fa-bus fa-2x"></i></li>
+                        <li><i class="fas fa-utensils fa-2x"></i></li>
+                      </ul>
+                  </div>
+                      <p class ="tour-type"><i class="far fa-calendar-alt"></i>Customizable</p>
+                      <p class ="tour-day"><i class="far fa-clock"></i>8-9 Days</p> 
+                      <p class ="international-price">From RM 2500<span>All Inclusive</span></p>
+                      <a href="tours.html" class="btn-card">Find Out More</a>               
+                </div>
+            </div>
+         
+            
+            <div class="tour-card" class="slide-right">  
+              <img src="images/Cards/Nepal_1.jpg" alt="" class="tour-img">
+                <div class="tour-details">
+                  <div class="tour-contained">
+                    <h3 class="tour-name"><i class="fas fa-map-marker-alt  fa-1x"></i>Nepal</h3>
+                      <ul class="icons">
+                        <li><i class="fas fa-users fa-2x"></i></li>
+                        <li><i class="fas fa-camera fa-2x"></i></li>
+                        <li><i class="fas fa-bus fa-2x"></i></li>
+                        <li><i class="fas fa-utensils fa-2x"></i></li>
+                      </ul>
+                  </div>
+                      <p class ="tour-type"><i class="far fa-calendar-alt"></i>Customizable</p>
+                      <p class ="tour-day"><i class="far fa-clock"></i>8-9 Days</p> 
+                      <p class ="international-price">From RM 2500<span>All Inclusive</span></p>
+                      <a href="tours.html" class="btn-card">Find Out More</a>               
+                </div>
+            </div>
+       </div>
+  </div>
+</div>
+</section>
+<!--Tour card section ends-->
+
+<!--Hiking section-->
+<section class="hiking" id="hiking">  
+  <div class="container">
+    <div class="hiking-head">
+      <p class="second-heading">Hiking Adventures</p>
+      <p class="second-subheading">Exclusive Hiking and Tour Trips</p>
+    </div>
+
+<!--links-->
+  <div class="hiking-container">
+    <div class="hiking-image"></div>
+      <div class="hiking-tours-card" data-aos=slide-down> 
+        <h2>Tours</h2>
+         <div class="hiking-tours">
+          <ul>
+            <li><a>Lake Toba Hiking Tour,<span> Indonesia</span></a></li> 
+            <li><a>Annapurna Base Camp Hiking Tour,<span> Nepal</span></a></li> 
+            <li><a>Everest Base Camp Hiking Tour,<span> Nepal</span></a></li> 
+            <li><a>Mt.Fuji Hiking & Tokyo City Tour<span> Japan</span></a></li> 
+            <li><a>Hampta Pass Hiking Tour<span> India</span></a></li> 
+            <li><a>Kailash Pilgrimage & Hiking<span> India</span></a></li> 
+            <li><a>Mt Halasan,Jeju<span> Korea</span></a></li> 
+            <li><a>Mt Fansipan, <span> Vietnam</span></a></li> 
+          </ul>
+          <a href="tours.html" class="btn-2">Explore</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Hiking section ends-->
+
+<!--Local section-->
+<section class ="local" id="local">
+  <div class="container">
+    <div class="local-head">
+      <p class="second-heading">Free This Weekend?</p>
+      <p class="second-subheading">Local Destinations</p>
+    </div>
+
+    <div class="local-container">
+      <div class="local-card">  
+        <div class="img-box">
+          <img src="images/Cards2/KualaLumpur_3.jpg" alt="" class="local-img">
+        </div>
+            <div class="local-details">
+              <h3 class="local-name"><i class="fas fa-map-marker-alt"></i>Kuala Lumpur</h3>
+              <p class ="local-type"><i class="far fa-calendar-alt"></i>Free & Easy</p>
+              <p class ="local-days"><i class="far fa-clock"></i>2-3 Days</p>
+              <p class ="local-price">From RM 250<span>All Inclusive</span></p>
+              <ul class="icons-1">
+                <li><a><i class="fas fa-users fa-2x"></i></a></li>
+                <li><a><i class="fas fa-camera fa-2x"></i></a></li>
+                <li><a><i class="fab fa-wpexplorer fa-2x"></i></a></li>
+                <li><a><i class="fas fa-utensils fa-2x"></i></a></li>
+              </ul>
+              <div class ="button">
+              <a href="#" class="btn-card">Find Out More</a> 
+              </div>         
+          </div>
+      </div>
+
+      <div class="local-card">  
+        <div class="img-box">
+          <img src="images/Cards2/Penang_1.jpg" alt="" class="local-img">
+        </div>
+            <div class="local-details">
+              <h3 class="local-name"><i class="fas fa-map-marker-alt"></i>Penang</h3>
+              <p class ="local-type"><i class="far fa-calendar-alt"></i>Free & Easy</p>
+              <p class ="local-days"><i class="far fa-clock"></i>4-5 Days</p>
+              <p class ="local-price">From RM 300<span>All Inclusive</span></p>
+              <ul class="icons-1">
+                <li><a><i class="fas fa-users fa-2x"></i></a></li>
+                <li><a><i class="fas fa-camera fa-2x"></i></a></li>
+                <li><a><i class="fab fa-wpexplorer fa-2x"></i></a></li>
+                <li><a><i class="fas fa-utensils fa-2x"></i></a></li>
+              </ul>
+              <div class ="button">
+              <a href="#" class="btn-card">Find Out More</a> 
+              </div>         
+          </div>
+      </div>
+
+      <div class="local-card">  
+        <div class="img-box">
+          <img src="images/Cards2/Langkawi_2.jpg" alt="" class="local-img">
+        </div>
+            <div class="local-details">
+              <h3 class="local-name"><i class="fas fa-map-marker-alt"></i>Langkawi</h3>
+              <p class ="local-type"><i class="far fa-calendar-alt"></i>Free & Easy</p>
+              <p class ="local-days"><i class="far fa-clock"></i>3-4 Days</p>
+              <p class ="local-price">From RM 350<span>All Inclusive</span></p>
+              <ul class="icons-1">
+                <li><a><i class="fas fa-users fa-2x"></i></a></li>
+                <li><a><i class="fas fa-camera fa-2x"></i></a></li>
+                <li><a><i class="fab fa-wpexplorer fa-2x"></i></a></li>
+                <li><a><i class="fas fa-utensils fa-2x"></i></a></li>
+              </ul>
+              <div class ="button">
+              <a href="#" class="btn-card">Find Out More</a> 
+              </div>         
+          </div>
+      </div>
+
+      <div class="local-card">  
+        <div class="img-box">
+          <img src="images/Cards2/Sarawak_2.jpg" alt="" class="local-img">
+        </div>
+            <div class="local-details">
+              <h3 class="local-name"><i class="fas fa-map-marker-alt"></i>Kota Kinabalu</h3>
+              <p class ="local-type"><i class="far fa-calendar-alt"></i>Culture & Nature</p>
+              <p class ="local-days"><i class="far fa-clock"></i>4-5 Days</p>
+              <p class ="local-price">From RM 500<span>All Inclusive</span></p>
+              <ul class="icons-1">
+                <li><a><i class="fas fa-users fa-2x"></i></a></li>
+                <li><a><i class="fas fa-camera fa-2x"></i></a></li>
+                <li><a><i class="fab fa-wpexplorer fa-2x"></i></a></li>
+                <li><a><i class="fas fa-utensils fa-2x"></i></a></li>
+              </ul>
+              <div class ="button">
+              <a href="#" class="btn-card">Find Out More</a> 
+              </div>         
+          </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+<!--End of local section-->
+
+<!--Contact us section-->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-image"></div>
+        <div class="contact-card"> 
+
+          <div class="contact-head">
+            <p class="heading">Find Out More</p>
+            <p class="subheading">Contact Us</p>
+          </div>
+
+          <div class="form-field">
+            <input id="name" type="text" class="input-text">
+            <label for="name" class="label-name"> Name</label>
+          </div>
+        
+          <div class="form-field">
+            <input id="email" type="text" class="input-text" >
+            <label for="email" class="label-name">Email</label>
+          </div>
+
+          <div class="form-field">
+            <input id="contact-number" type="text" class="input-text">
+            <label for="contact-number" class="label-name"> Contact Number </label>
+          </div>
+
+          <div class="form-field">
+            <textarea id="name" type="text" class="text-area"></textarea>
+            <label for="name" class="label-name">Message</label>
+          </div>
+
+          <input type="submit" class="submit-btn" value="Submit" name="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of contact us section-->
+
+<!--Footer section-->
+<footer>
+  <div class="footer-container">
+    <div class="contact-footer">
+      <h4>Contact Us</h4>
+        <p class="address-details">
+          <br><i class="fas fa-map-marker-alt"></i>No. 223-2, 2nd Floor,</br>
+          <br>Wisma Low Kim Her,</br>
+          <br>Jalan Tun Sambanthan,</br>
+          <br>Brickfields 50470,</br>
+          <br>Kuala Lumpur, Malaysia</br>
+        </p>
+        <ul class="contact-details">
+          <li><a href="#"><i class="fab fa-whatsapp"></i>  +601 - 69224775</a></li> 
+          <li><a href="#"><i class="fas fa-phone-alt"></i>  03 - 2272 4775</a></li>
+          <li><a href="#"><i class="fas fa-fax"></i>  03 - 2272 4776</a></li>
+          <li><a href="#"><i class="far fa-envelope"></i>  enquiry@clasictours.com.my</a></li>
+        </ul>        
+     </div>
+
+    <div class="contact-footer">
+      <h4>Our Menu</h4>
+        <ul class="menu">
+          <li><a href="#">Home</a></li> 
+          <li><a href="#International">Tour Packages</a></li>
+          <li><a href="#hiking">Special Packages</a></li>
+          <li><a href="#Visa">Visa</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="contact-footer">
+      <h4>Connect With Us</h4>
+        <ul class="social-icons">
+          <a href="#"><i class ="fab fa-facebook-square fa-4x"></i></a>
+          <a href="#"><i class ="fab fab fa-twitter fa-4x"></i></a>
+          <a href="#"><i class ="fab  fa-youtube fa-4x"></i></a>
+        </ul>  
+    </div>
+  </div>
+    <div>
+      <h3>@2021.Clasic Travel & Tours. All Rights Reserved</h3>
+    </div>
+</footer>
+<!--End of footer section-->
+
+<script src="main.js"></script>
+</body>
+</html>
