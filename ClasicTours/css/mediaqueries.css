@@ -1,0 +1,239 @@
+@media screen and (max-width:850px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .menu-toggle .fa-times{
+        display: none;
+    }
+
+    nav{
+        display: absolute;
+        background-color:transparent;
+        border-bottom: none;
+        z-index: 1000;
+    }
+
+    header .logo{
+        display: absolute; 
+        top:0;
+        left: 0;
+        max-width:140px;
+        max-height: 140px;
+    }
+
+    .nav-list{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--dark-blue-color);
+        z-index: 1400;
+        transform: translateX(-100%);
+        transition: transform .5s;
+    }
+
+    .nav-list  li{
+        position: relative;
+        font-size: 15px;
+    }
+
+    .nav-list a{
+        font-size: 16px;
+        margin: 0px 30px;
+        font-weight:bolder;
+    }
+     
+    nav::before{
+        content: '0';
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--transparent-blue-color);
+        z-index: 1000;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity .5s;
+    }
+
+/*sub-menu */
+    .submenu{
+        width: 200px;
+        position: initial;
+        border: 2px solid transparent;
+        border-left-color: var(--light-blue-color);
+        margin-left: 30px;
+        max-height: 0;
+    }
+
+    .submenu::before{
+       display: none;
+    }
+
+    .submenu a{
+        margin: 3px 0px;
+        font-size: 14px;
+    }
+    
+    .nav-list li:hover > .submenu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+/* Javascript */
+    .open .fa-times{
+        display: block;
+    }
+
+    .open .fa-bars{
+        display: none;
+    }
+
+    .open .nav-list{
+        transform: translateX(0);
+    }
+
+    .open nav::before{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slider Section */
+@media screen and (max-width:1100px){
+    .hero{
+        top: 40%;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width:850px){
+
+    .slideitem{
+       height: 500px;
+    }
+
+    .hero{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        /*animation */
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes posi2{
+        from{top:20%;}
+        to{ top: 50%}
+    }
+
+    @keyframes posi2{
+        from {top:20%}
+        to{top:50%;}
+    }
+
+    .intro{
+        font-size: 80px;
+    }   
+
+    .company{
+        font-size: 20px;
+    }
+
+    .quote{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:610px){
+    .hero{
+        top: 50%;
+        left: 8%;
+    }
+}
+
+/*Tour cards */
+@media screen and (max-width:850px){
+    .tour-card{
+        height: 300px;
+        width: 350px;
+        box-shadow: 0px 14px 80px rgba(0, 0, 0, 0.2);
+    }
+}
+/*Hiking card Section */
+    @media screen and (max-width:850px){
+        .hiking-container{
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }   
+        
+        .hiking .hiking-image{ 
+            display: none;
+        }
+
+        .hiking-tours-card{
+            height: 60vh;
+            width: 100%;
+            background-color: var(--transparent-blue-color);
+        }
+
+        .hiking-tours ul li {
+            position: relative;
+            margin-left: 40px;
+        }
+
+        .hiking-tours-card h2{
+            padding: 10px 100px; 
+        }
+
+    }
+
+    @media screen and (max-width:450px){
+
+    .hiking-container{
+        padding: 10px 10px;
+    }
+    .hiking-tours ul a{
+        font-size: 8px;
+    }
+
+    .hiking-tours ul a span{
+        font-size: 9px;
+    }
+
+    .btn-2{
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    }
+
+/* Local cards */
+@media screen and (max-width:850px){
+    .contact-container{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+    
+    .contact-image{ 
+        display: none;
+    }
+}
+
+/* Footer */
+@media screen and (max-width:850px){
+    .contact-footer h4{
+        font-size: 18px;
+    }
+ }
